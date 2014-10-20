@@ -180,6 +180,8 @@
   Number                   = {5},
   Pages                    = {463--471},
   Volume                   = {36},
+
+  __markedentry            = {[Nainan:]},
   Owner                    = {Nainan},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.10.18},
@@ -332,20 +334,6 @@
   Url                      = {http://dx.doi.org/10.1038/nrg2344}
 }
 
-@Article{Melville2012,
-  Title                    = {Multiple loci influencing hippocampal degeneration identified by genome scan},
-  Author                   = {Melville, Scott A and Buros, Jacqueline and Parrado, Antonio R and Vardarajan, Badri and Logue, Mark W and Shen, Li and Risacher, Shannon L and Kim, Sungeun and Jun, Gyungah and DeCarli, Charles and others},
-  Journal                  = {Annals of neurology},
-  Year                     = {2012},
-  Number                   = {1},
-  Pages                    = {65--75},
-  Volume                   = {72},
-  Owner                    = {Nainan},
-  Publisher                = {Wiley Online Library},
-  Timestamp                = {2014.10.19},
-  Url                      = {http://onlinelibrary.wiley.com/doi/10.1002/ana.23644/full}
-}
-
 @Article{Nam2008,
   Title                    = {Gene-set approach for expression pattern analysis.},
   Author                   = {Nam, Dougu and Kim, Seon-Young},
@@ -476,22 +464,6 @@
   Url                      = {http://dx.doi.org/10.1038/nrg3706}
 }
 
-@Article{Silver2012,
-  Title                    = {Identification of gene pathways implicated in Alzheimer's disease using longitudinal imaging phenotypes with sparse regression},
-  Author                   = {Silver, Matt and Janousova, Eva and Hua, Xue and Thompson, Paul M and Montana, Giovanni},
-  Journal                  = {NeuroImage},
-  Year                     = {2012},
-  Number                   = {3},
-  Pages                    = {1681--1694},
-  Volume                   = {63},
-
-  __markedentry            = {[Nainan:]},
-  Owner                    = {Nainan},
-  Publisher                = {Elsevier},
-  Timestamp                = {2014.10.19},
-  Url                      = {http://www.sciencedirect.com/science/article/pii/S1053811912007951}
-}
-
 @Article{Song2013,
   Title                    = {Simulation of longitudinal exposure data with variance-covariance structures based on mixed models.},
   Author                   = {Song, Peng and Xue, Jianping and Li, Zhilin},
@@ -513,22 +485,6 @@
   Pmid                     = {22817762},
   Timestamp                = {2014.10.18},
   Url                      = {http://dx.doi.org/10.1111/j.1539-6924.2012.01869.x}
-}
-
-@Article{Wang2012,
-  Title                    = {From phenotype to genotype: an association study of longitudinal phenotypic markers to Alzheimer's disease relevant SNPs},
-  Author                   = {Wang, Hua and Nie, Feiping and Huang, Heng and Yan, Jingwen and Kim, Sungeun and Nho, Kwangsik and Risacher, Shannon L and Saykin, Andrew J and Shen, Li and others},
-  Journal                  = {Bioinformatics},
-  Year                     = {2012},
-  Number                   = {18},
-  Pages                    = {i619--i625},
-  Volume                   = {28},
-
-  __markedentry            = {[Nainan:6]},
-  Owner                    = {Nainan},
-  Publisher                = {Oxford Univ Press},
-  Timestamp                = {2014.10.19},
-  Url                      = {http://bioinformatics.oxfordjournals.org/content/28/18/i619.short}
 }
 
 @Article{Wang2010,
@@ -582,6 +538,8 @@
   Number                   = {8},
   Pages                    = {e102312},
   Volume                   = {9},
+
+  __markedentry            = {[Nainan:]},
   Owner                    = {Nainan},
   Publisher                = {Public Library of Science},
   Timestamp                = {2014.10.18}

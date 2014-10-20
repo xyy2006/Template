@@ -28,14 +28,14 @@
 %\input{Proposal_draft-concordance}
 %cover page
 \begin{titlepage}
-\title{\normalsize THIS IS YOUR THESIS TITLE}
+\title{\normalsize A Data-adaptive SNP-Set-based Association Test of Longitudinal Traits and the extension to Test on Gene Pathway  }
 \date{}
 \maketitle
 
 {\normalsize
 \begin{center}
 by\\[5mm]
-Your Name, degree\\[10mm]
+Yang Yang, M.S\\[10mm]
 APPROVED:\\[10mm]
 \end{center}}
 
@@ -67,8 +67,8 @@ Breadth Prof, PHD\\[0.8cm]
 \begin{center}
 Coptyright\\
 by\\
-Your name, degree\\
-YEAR
+Yang Yang, M.S\\
+2014
 \end{center}
 
 
@@ -77,8 +77,10 @@ YEAR
 \doublespacing
 \begin{center}
 DEDICATION\\
-xxx\\
-xxx
+Persistent support from my family members:\\
+Nainan Hei\\
+\&\\
+Tianpeng Yang and Qi Lu
 \end{center}
 
 
@@ -86,11 +88,11 @@ xxx
 \thispagestyle{empty}
 \doublespacing
 \begin{center}
-{\normalsize THESIS TITLE}\\[3.2cm]
+{\normalsize A Data-adaptive SNP-set-based Association Test of Longitudinal Traits and the extension to Test on Gene Pathway}\\[3.2cm]
 
 by\\[0.5cm]
 
-Your Name, degree\\[3.2cm]
+Yang Yang, M.S\\[3.2cm]
 
 Presented to the Faculty of The University of Texas\\
 School of Public Health\\
@@ -102,7 +104,7 @@ DOCTOR OF PHILOSOPHY\\[1.5cm]
 THE UNIVERSITY OF TEXAS\\
 SCHOOL OF PULIC HEALTH\\
 Houston, Texas\\
-month, Year
+November, 2015
 \end{center}
 
 
@@ -112,25 +114,27 @@ month, Year
 \begin{center}
 ACKNOWLEDGEMENTS
 \end{center}
-text text text
+Great thanks to my dissertation adviser Dr. Peng Wei, as he guided me ever from 2011, put countless efforts in training me to be a countable person, and then a qualified Ph.D. I also appreciate great helps from my dissertation committee members: Dr. Han Liang, Dr. Alanna C. Morrison and Dr. Yun-Xin Fu. They are talented experts in their fields and provided me with enormous valuable advice towards my research and writings.
 
 
 \newpage
 \thispagestyle{empty}
 \doublespacing
 \begin{center}
-{\normalsize THESIS TITLE}\\[2.3cm]
+{\normalsize  A Data-adaptive SNP-set-based Association Test of Longitudinal Traits and the extension to Test on Gene Pathway}\\[2.3cm]
 \singlespacing
-Your name, degree\\
+Yang Yang, M.S\\
 The University of Texas\\
-School of Public Health, YEAR
+School of Public Health, 2014
 \end{center}
 
 \doublespacing
 \noindent
-Thesis Chair, prof's name, PhD\\
+Thesis Chair, Peng Wei, PhD\\
 \indent
-text text text
+Prof 2, Liang Han, PhD\\
+Minor Prof, Alanna C. Morrison, PhD\\ 
+Breadth Prof, Yun-Xin Fu, PhD
 
 
 
@@ -149,8 +153,18 @@ text text text
 \section{Background}\label{sec:background}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \doublespacing
-This is a template for UT SPH Phd proposal based on \LaTeX \cite{lamport1986document}.
+% This is a template for UT SPH Phd proposal based on \LaTeX \cite{lamport1986document}.\\
+Genome-wide association studies (GWASs) has been popular ever since 2007, and till now hundreds of GWAS have been published already \cite{McCarthy2008}. The most popular approach in GWAS is to test the association between complex traits and single nucleotide variant (SNV) one by one, then select the the SNVs meeting a stringent significance level after multiple testing error correction, such as Bonferroni and FDR methods [A CITE HERE]. However, this strategy will suffer from low power when the minor allele frequency (MAF) of the SNV is low (between $1\%$ and $5\%$), and as a result the signal contained within the SNV is weak \cite{Sham2014}. Such a case becomes even more severe a problem for rare variants (RVs), which usually has MAF below $1\%$ \cite{Bansal2010}. Although with extremely low MAF, we cannot underestimate RVs' important effects underlying disease risk, which are usually functional and deleterious; RVs also bring over larger effect size than common variants \cite{Fu2013,Bansal2010,Sham2014}. Therefore, developing new association test tailored to SNVs with low MAF and RVs has been very active research area in recent years. Due to the nature of low MAF, either increasing case sample size or aggregating information across multiple variants in an analysis set (e.g. gene) is expected to achieve a practically acceptable power \cite{Capanu2011,Basu2011,Bansal2010,Sham2014}. As increase sample size is usually expensive and demanding, e.g. more than 25,000 cases will be required, advances in gene-based and sets of functionally related genes tests are major directions people have been investigating towards \cite{Ye2011,Pinto2010,Sham2014}. Sets of genes can be defined by, e.g. Gene Ontology terms, protein-protein interaction, canonical gene signal pathways, gene expression networks, etc \cite{Sham2014,DelaCruz2010,Weng2011,Wang2010}.
 
+While many GWASs have been performed in cohorts, they collected data across multiple time points for each individual \cite{Aulchenko2009,Ionita-Laza2007,Kamatani2010,Kathiresan2007,Sabatti2008}. However, the longitudinal information has not been fully utilized as the majority of current association tests only used either the baseline measurement or average measurement for each individual\cite{Sabatti2008,Ionita-Laza2007,Kamatani2010,Kathiresan2007}. Compared to the total number of GWASs, very few studies involved longitudinal data analysis. One such study on smoking and nicotine dependence by Belsky et.al have data from a 4-decade longitudinal study, and they used generalized estimating equation model to analyze the panel data account for correlation within subject \cite{Belsky2013}. There are also several studies on Alzheimer's Disease (or more specifically ADNI-1 data collected by Alzheimer's Disease Neuroimaging Initiative) involving the analyses of longitudinal phenotypic information collected at multiple time points \cite{Wang2012,Melville2012,Silver2012}. Increased power coming from longitudinal data seems intuitive, and recently this fact has been discussed in depth by either simulation study and/or real data analysis \cite{Xu2014,Furlotte2012}. Depending on specific parameters settings in simulation studies and case by case for real data analysis, the power gain from longitudinal data analysis as compared to baseline data analysis can range from a moderate to a significant amount. \cite{Xu2014,Furlotte2012}. Existing methods in longitudinal data analysis can be mainly categorized into three categories: 1, mixed model; 2, generalized estimating equation model; 4,Markov chain model.
+
+Extending the gene-based association test to sets of multiple related genes could return more biological meaningful inference, as in vivo, there are usually multiple genes working together to fulfill a biological function [A CITE HERE], analyzing "co-workers" genes together tends to identify more signal hidden from or attenuated by each single gene . Complex disease are known to have a combination of genetic factors in addition to environmental, lifestyle factors, and their interactions [A CITE HERE]. Thus by investigating into the combination of genes, more evidence could be extracted as risk altering factors contributing to a specific disease. Among association tests on sets of functional related genes, gene pathway based association test is probably the most popular one \cite{DelaCruz2010,Wang2010}. There are two major categories of testing: self-contained approach and competitive approach \cite{Wang2010,Nam2008,Goeman2007}. The difference between the two major tests lies in the null hypothesis each test makes: self-constrained approach hypothesizes there is no gene in the gene set associated with the phenotype while competitive approach hypothesizes the same level of association of a gene set with the given phenotype as the complement of the gene set. 
+
+
+Meanwhile, rapid advances in rare-variant
+gene-based and pathway-based tests are paving the
+way for more powerful exome sequencing studies for
+complex diseases.
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
